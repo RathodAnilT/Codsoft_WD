@@ -1,0 +1,64 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1d20; /* Light background color for the entire page */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.task-tracker-container {
+  background-color: #fff; /* White background for the task tracker container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Add scrollbar when tasks exceed container height */
+}
+
+h1 {
+  text-align: center;
+  color: #343a40; /* Dark text color for headings */
+}
+
+/* Styling for the task form */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background-color: #007bff; /* Blue color for the add task button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the task list */
+.task-list {
+  margin-top: 20px;
+  width: 100%; /* Set the width to 100% */
+}
